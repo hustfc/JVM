@@ -5,13 +5,11 @@ package com.fanc.jvm;
  * @Date : 2019/12/21 4:43 下午
  */
 public class Foo {
+    private String hello() {
+        return "hello";
+    }
+
     public static void main(String[] args) {
-        boolean flag = true;
-        if (flag) {
-            System.out.println("Hello, Java!");
-        }
-        if (flag == true) {
-            System.out.println("Hello, JVM!");
-        }
+        System.out.println(new Foo().hello());
     }
 }

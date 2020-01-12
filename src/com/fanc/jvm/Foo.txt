@@ -1,0 +1,70 @@
+Classfile /Users/fanc/Documents/GitHub/JVM/src/com/fanc/jvm/Foo.class
+  Last modified 2020-1-12; size 505 bytes
+  MD5 checksum 666213cb9c5e822f44981beeab19fb6b
+  Compiled from "Foo.java"
+public class com.fanc.jvm.Foo
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #8.#19         // java/lang/Object."<init>":()V
+   #2 = String             #13            // hello
+   #3 = Fieldref           #20.#21        // java/lang/System.out:Ljava/io/PrintStream;
+   #4 = Class              #22            // com/fanc/jvm/Foo
+   #5 = Methodref          #4.#19         // com/fanc/jvm/Foo."<init>":()V
+   #6 = Methodref          #4.#23         // com/fanc/jvm/Foo.hello:()Ljava/lang/String;
+   #7 = Methodref          #24.#25        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #8 = Class              #26            // java/lang/Object
+   #9 = Utf8               <init>
+  #10 = Utf8               ()V
+  #11 = Utf8               Code
+  #12 = Utf8               LineNumberTable
+  #13 = Utf8               hello
+  #14 = Utf8               ()Ljava/lang/String;
+  #15 = Utf8               main
+  #16 = Utf8               ([Ljava/lang/String;)V
+  #17 = Utf8               SourceFile
+  #18 = Utf8               Foo.java
+  #19 = NameAndType        #9:#10         // "<init>":()V
+  #20 = Class              #27            // java/lang/System
+  #21 = NameAndType        #28:#29        // out:Ljava/io/PrintStream;
+  #22 = Utf8               com/fanc/jvm/Foo
+  #23 = NameAndType        #13:#14        // hello:()Ljava/lang/String;
+  #24 = Class              #30            // java/io/PrintStream
+  #25 = NameAndType        #31:#32        // println:(Ljava/lang/String;)V
+  #26 = Utf8               java/lang/Object
+  #27 = Utf8               java/lang/System
+  #28 = Utf8               out
+  #29 = Utf8               Ljava/io/PrintStream;
+  #30 = Utf8               java/io/PrintStream
+  #31 = Utf8               println
+  #32 = Utf8               (Ljava/lang/String;)V
+{
+  public com.fanc.jvm.Foo();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 7: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: getstatic     #3                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: new           #4                  // class com/fanc/jvm/Foo
+         6: dup
+         7: invokespecial #5                  // Method "<init>":()V
+        10: invokespecial #6                  // Method hello:()Ljava/lang/String;
+        13: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        16: return
+      LineNumberTable:
+        line 13: 0
+        line 14: 16
+}
+SourceFile: "Foo.java"
