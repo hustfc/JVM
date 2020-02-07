@@ -18,15 +18,15 @@ import javax.swing.JPanel;
 import java.util.*;
 
 
-public class RandomName // implements extends Thread
-        implements ActionListener, Runnable {
+public class RandomName implements ActionListener, Runnable {
     // 設置一個標記
     private boolean flag = false;
-    private JFrame randomFrame = new JFrame("点击获取锦鲤");
+    private JFrame randomFrame = new JFrame("元宵节活动");
     // 创建一个Panel对象。
     private JPanel randomPanel = new JPanel();
     private TextField tf1 = new TextField(30);
     private TextField tf2 = new TextField(30);
+    //private TextField tf3 = new TextField(10);
     private JButton randomButton1 = new JButton("开始抽奖");
     private JButton randomButton2 = new JButton("停");
     private String[] name = { "1-雅雅", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven",
@@ -77,6 +77,7 @@ public class RandomName // implements extends Thread
         }
         if (obj == randomButton2) {
             synchronized (this) {
+                flag = false;
                 while (resultNames.contains(tf1.getText())) {
                     Random myRandomName = new Random();
                     int RN = myRandomName.nextInt(length);
@@ -93,7 +94,7 @@ public class RandomName // implements extends Thread
                 resultName = tf2.getText();
                 resultNames.add(resultName);
                 System.out.println(resultName);
-                flag = false;
+                System.out.println("中奖名单" + resultNames);
             }
         }
     }
