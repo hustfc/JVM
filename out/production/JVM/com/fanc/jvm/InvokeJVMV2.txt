@@ -1,0 +1,177 @@
+Classfile /Users/fanc/Documents/GitHub/JVM/src/com/fanc/jvm/InvokeJVMV2.class
+  Last modified 2020-1-10; size 1165 bytes
+  MD5 checksum d5b73814a5767d436ababcf7825b949a
+  Compiled from "InvokeJVMV2.java"
+public class com.fanc.jvm.InvokeJVMV2
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #13.#33        // java/lang/Object."<init>":()V
+   #2 = String             #34            // com.fanc.jvm.InvokeJVMV2
+   #3 = Methodref          #5.#35         // java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+   #4 = String             #21            // target
+   #5 = Class              #36            // java/lang/Class
+   #6 = Fieldref           #37.#38        // java/lang/Integer.TYPE:Ljava/lang/Class;
+   #7 = Methodref          #5.#39         // java/lang/Class.getMethod:(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+   #8 = Methodref          #40.#41        // java/lang/System.currentTimeMillis:()J
+   #9 = Integer            2000000000
+  #10 = Integer            100000000
+  #11 = Fieldref           #40.#42        // java/lang/System.out:Ljava/io/PrintStream;
+  #12 = Methodref          #43.#44        // java/io/PrintStream.println:(J)V
+  #13 = Class              #45            // java/lang/Object
+  #14 = Methodref          #37.#46        // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+  #15 = Methodref          #47.#48        // java/lang/reflect/Method.invoke:(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+  #16 = Class              #49            // com/fanc/jvm/InvokeJVMV2
+  #17 = Utf8               <init>
+  #18 = Utf8               ()V
+  #19 = Utf8               Code
+  #20 = Utf8               LineNumberTable
+  #21 = Utf8               target
+  #22 = Utf8               (I)V
+  #23 = Utf8               main
+  #24 = Utf8               ([Ljava/lang/String;)V
+  #25 = Utf8               StackMapTable
+  #26 = Class              #50            // "[Ljava/lang/String;"
+  #27 = Class              #36            // java/lang/Class
+  #28 = Class              #51            // java/lang/reflect/Method
+  #29 = Utf8               Exceptions
+  #30 = Class              #52            // java/lang/Exception
+  #31 = Utf8               SourceFile
+  #32 = Utf8               InvokeJVMV2.java
+  #33 = NameAndType        #17:#18        // "<init>":()V
+  #34 = Utf8               com.fanc.jvm.InvokeJVMV2
+  #35 = NameAndType        #53:#54        // forName:(Ljava/lang/String;)Ljava/lang/Class;
+  #36 = Utf8               java/lang/Class
+  #37 = Class              #55            // java/lang/Integer
+  #38 = NameAndType        #56:#57        // TYPE:Ljava/lang/Class;
+  #39 = NameAndType        #58:#59        // getMethod:(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  #40 = Class              #60            // java/lang/System
+  #41 = NameAndType        #61:#62        // currentTimeMillis:()J
+  #42 = NameAndType        #63:#64        // out:Ljava/io/PrintStream;
+  #43 = Class              #65            // java/io/PrintStream
+  #44 = NameAndType        #66:#67        // println:(J)V
+  #45 = Utf8               java/lang/Object
+  #46 = NameAndType        #68:#69        // valueOf:(I)Ljava/lang/Integer;
+  #47 = Class              #51            // java/lang/reflect/Method
+  #48 = NameAndType        #70:#71        // invoke:(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+  #49 = Utf8               com/fanc/jvm/InvokeJVMV2
+  #50 = Utf8               [Ljava/lang/String;
+  #51 = Utf8               java/lang/reflect/Method
+  #52 = Utf8               java/lang/Exception
+  #53 = Utf8               forName
+  #54 = Utf8               (Ljava/lang/String;)Ljava/lang/Class;
+  #55 = Utf8               java/lang/Integer
+  #56 = Utf8               TYPE
+  #57 = Utf8               Ljava/lang/Class;
+  #58 = Utf8               getMethod
+  #59 = Utf8               (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  #60 = Utf8               java/lang/System
+  #61 = Utf8               currentTimeMillis
+  #62 = Utf8               ()J
+  #63 = Utf8               out
+  #64 = Utf8               Ljava/io/PrintStream;
+  #65 = Utf8               java/io/PrintStream
+  #66 = Utf8               println
+  #67 = Utf8               (J)V
+  #68 = Utf8               valueOf
+  #69 = Utf8               (I)Ljava/lang/Integer;
+  #70 = Utf8               invoke
+  #71 = Utf8               (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+{
+  public com.fanc.jvm.InvokeJVMV2();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 9: 0
+
+  public static void target(int);
+    descriptor: (I)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=0, locals=1, args_size=1
+         0: return
+      LineNumberTable:
+        line 11: 0
+
+  public static void main(java.lang.String[]) throws java.lang.Exception;
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=6, locals=8, args_size=1
+         0: ldc           #2                  // String com.fanc.jvm.InvokeJVMV2
+         2: invokestatic  #3                  // Method java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+         5: astore_1
+         6: aload_1
+         7: ldc           #4                  // String target
+         9: iconst_1
+        10: anewarray     #5                  // class java/lang/Class
+        13: dup
+        14: iconst_0
+        15: getstatic     #6                  // Field java/lang/Integer.TYPE:Ljava/lang/Class;
+        18: aastore
+        19: invokevirtual #7                  // Method java/lang/Class.getMethod:(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+        22: astore_2
+        23: invokestatic  #8                  // Method java/lang/System.currentTimeMillis:()J
+        26: lstore_3
+        27: iconst_1
+        28: istore        5
+        30: iload         5
+        32: ldc           #9                  // int 2000000000
+        34: if_icmpgt     88
+        37: iload         5
+        39: ldc           #10                 // int 100000000
+        41: irem
+        42: ifne          63
+        45: invokestatic  #8                  // Method java/lang/System.currentTimeMillis:()J
+        48: lstore        6
+        50: getstatic     #11                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        53: lload         6
+        55: lload_3
+        56: lsub
+        57: invokevirtual #12                 // Method java/io/PrintStream.println:(J)V
+        60: lload         6
+        62: lstore_3
+        63: aload_2
+        64: aconst_null
+        65: iconst_1
+        66: anewarray     #13                 // class java/lang/Object
+        69: dup
+        70: iconst_0
+        71: sipush        128
+        74: invokestatic  #14                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        77: aastore
+        78: invokevirtual #15                 // Method java/lang/reflect/Method.invoke:(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+        81: pop
+        82: iinc          5, 1
+        85: goto          30
+        88: return
+      LineNumberTable:
+        line 14: 0
+        line 15: 6
+        line 16: 23
+        line 17: 27
+        line 18: 37
+        line 19: 45
+        line 20: 50
+        line 21: 60
+        line 23: 63
+        line 17: 82
+        line 25: 88
+      StackMapTable: number_of_entries = 3
+        frame_type = 255 /* full_frame */
+          offset_delta = 30
+          locals = [ class "[Ljava/lang/String;", class java/lang/Class, class java/lang/reflect/Method, long, int ]
+          stack = []
+        frame_type = 32 /* same */
+        frame_type = 250 /* chop */
+          offset_delta = 24
+    Exceptions:
+      throws java.lang.Exception
+}
+SourceFile: "InvokeJVMV2.java"
